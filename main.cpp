@@ -2,6 +2,7 @@
 #include <vector>
 #include <cstdlib>
 #include <ctime>
+#include <iomanip>
 
 using namespace std;
 
@@ -72,6 +73,18 @@ int main()
              << " G: " << myVec[i].green
              << " B: " << myVec[i].blue << endl;
      }
+
+     // output a well-formatted table that uses cout
+     // manipulators for column alignment.
+     // output the vectors contents
+     cout << "" << endl;
+     cout << left << setw(10) << "Color#"
+          << setw(10) << "R value"
+          << setw(10) << "G value"
+          << setw(10) << "B value" << endl;
+    cout << "-----   -------   -------   -------" << endl;
+
+    
 
     return 0;
 }
