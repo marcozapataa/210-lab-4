@@ -84,7 +84,13 @@ int main()
           << setw(10) << "B value" << endl;
     cout << "-----   -------   -------   -------" << endl;
 
-    
+    for (size_t i = 0; i < myVec.size(); i++)
+    {
+        cout << left << setw(10) << i
+             << setw(10) << myVec[i].red
+             << setw(10) << myVec[i].green
+             << setw(10) << myVec[i].blue << endl;
+    }
 
     return 0;
 }
