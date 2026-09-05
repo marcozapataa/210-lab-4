@@ -65,7 +65,13 @@ int main()
         myVec.push_back(tempColor);
      }
 
-     
+     for (size_t i = 0; i < myVec.size(); i++)
+     {
+        cout << "Color# " << i << ": "
+             << " R: " << myVec[i].red
+             << " G: " << myVec[i].green
+             << " B: " << myVec[i].blue << endl;
+     }
 
     return 0;
 }
